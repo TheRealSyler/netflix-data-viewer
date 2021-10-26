@@ -45,7 +45,7 @@ const config: C = {
         sideEffects: true,
       },
       {
-        test: /\.txt$|\.data$/i,
+        test: /\.(txt|csv|data)$/i,
         use: 'raw-loader',
       },
     ],

@@ -6,16 +6,26 @@ body
   font-family: 'Roboto Mono', monospace
   margin: 0
 
-.header
-  font-size: 3.5rem
-  text-align: center
-  margin-top: 5rem
-  margin-bottom: 5rem
+.list-el-main
+  display: flex
+  justify-content: space-between
+.list-el
+  padding: 0.2rem 1rem
+  background: #212127
+  border-radius: 5px
 
-.paragraph
-  margin: 0 20%
-  text-align: center
-  font-size: 2rem
-
-a
-  color: #699
+  &:hover
+    background: #313137
+.list-seasons
+  display: flex
+  gap: 1rem
+  flex-direction: column
+  padding: 1rem 0
+.list-season
+  margin-left: 1rem
+  background: #020408
+  padding: 1rem
+  border-radius: 5px
+  cursor: pointer
+.list-episodes
+  margin-left: 1rem
