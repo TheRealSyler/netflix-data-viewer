@@ -103,6 +103,8 @@ function render(data: DataObject, filter: Filter, sort: Sort) {
     el2.className = 'list-seasons'
     el.className = 'list-el-main'
     const name = document.createElement('span')
+    name.onclick = () => window.open(`https://www.netflix.com/search?q=${data.name}`, "_blank");
+    name.style.cursor = "pointer"
     el.appendChild(name)
     name.textContent = data.name
 
